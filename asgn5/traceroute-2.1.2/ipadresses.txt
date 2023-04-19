@@ -1,0 +1,9 @@
+Ziyad: 172.20.233.150
+Kostav: 10.10.150.210
+Mitun: 10.10.151.11
+Supratim: 10.10.151.109
+Narsimhan: 10.10.150.228
+IIT BBS Site: iitbbs.ac.in
+
+Cloudflare: 1.1.1.1
+Google.com : 142.251.42.110
