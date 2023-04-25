@@ -398,18 +398,18 @@ void *receiveAndCheck(void *arg)
     FILE *fp2;
     fp2 = fopen("vary_final.csv", "w");
 
-    // for (int i = 0; i < 50000; i += 1000)
-    // {
-    //     int avg_trans = 0;
-    //     for (int trial = 0; trial < 3; trial++)
-    //     {
-    //         int res[2];
-    //         send_to_client(socketFD, 512, 80, i, res);
-    //         avg_trans += res[1];
-    //     }
-    //     double ep = BEP / 1000000.0;
-    //     fprintf(fp1, "%lf,%d\n", ep, avg_trans / 3);
-    // }
+    for (int i = 0; i < 50000; i += 1000)
+    {
+        int avg_trans = 0;
+        for (int trial = 0; trial < 3; trial++)
+        {
+            int res[2];
+            send_to_client(socketFD, 512, 80, i, res);
+            avg_trans += res[1];
+        }
+        double ep = BEP / 1000000.0;
+        fprintf(fp1, "%lf,%d\n", ep, avg_trans / 3);
+    }
 
     fclose(fp1);
     int res[2];

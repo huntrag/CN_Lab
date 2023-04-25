@@ -4,7 +4,7 @@ import csv
 Names = []
 Values = []
   
-with open('prob_temp.csv','r') as csvfile:
+with open('prob_final.csv','r') as csvfile:
     lines = csv.reader(csvfile, delimiter=',')
     for row in lines:
         Names.append(row[0])
